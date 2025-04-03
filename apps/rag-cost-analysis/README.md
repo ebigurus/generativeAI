@@ -50,4 +50,3 @@ Unlike traditional LLMs that require frequent fine-tuning, RAG dynamically retri
 2. **Generation**: The retrieved data is appended to an LLM prompt, providing additional context for generating a response. This avoids the need for fine-tuning, making the system dynamic and cost-efficient.
 
 As shown in Figure 1, "Retrieval-Augmented Generation (RAG) Costs Analysis" using a RAG framework can result in significant cost savings for generative AI apps.
-
