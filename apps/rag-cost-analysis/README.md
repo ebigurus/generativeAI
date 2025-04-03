@@ -46,7 +46,7 @@ As shown in Figure 1, "Retrieval-Augmented Generation (RAG) Costs Analysis" usin
 ![RAG Cost for Proprietary LLMs Input Tokens](rag_cost_analysis.jpg)
 
 # Using the Notebook
-The notebook is a Google Colab notebook written in Python. The notebook was designed to opened and run in Google Colab.
+The notebook is a Google Colab notebook written in Python. The notebook was designed to be opened and run in Google Colab.
 
 The notebook shows how to accurately calculate usage input token costs for a propreitary LLM, specifically, OpenAI. It uses a fictitious company's financial report as an internal knolwedge document and 1 year of synthetic usage data to illustrate calculating and forecasting the cost of input tokens for user queries as illustrated in the following chart.
 
