@@ -41,14 +41,14 @@ Unlike traditional LLMs that require frequent fine-tuning, RAG dynamically retri
 
 2. **Generation**: The retrieved data is appended to an LLM prompt, providing additional context for generating a response. This avoids the need for fine-tuning, making the system dynamic and cost-efficient.
 
-As shown in Figure 1, "Retrieval-Augmented Generation (RAG) Costs Analysis" using a RAG framework can result in significant cost savings for generative AI apps.
+As shown in the figure below, "Retrieval-Augmented Generation (RAG) Costs Analysis," using a RAG framework can result in significant cost savings for generative AI apps.
 
 ![RAG Cost for Proprietary LLMs Input Tokens](rag_cost_analysis.jpg)
 
 # Using the Notebook
 The notebook is a Google Colab notebook written in Python. The notebook was designed to be opened and run in Google Colab.
 
-The notebook shows how to accurately calculate usage input token costs for a propreitary LLM, specifically, OpenAI. It uses a fictitious company's financial report as an internal knolwedge document and 1 year of synthetic usage data to illustrate calculating and forecasting the cost of input tokens for user queries as illustrated in the following chart.
+The notebook shows how to accurately calculate usage input token costs for a propreitary LLM, specifically, OpenAI. It uses a fictitious company's financial report as an internal knolwedge document and 1 year of synthetic usage data to forecast OpenAI usage costs for input tokens based on a user query. The figure below shows cost forecast for a year for user input tokens with RAG and without RAG.
 
 ![Sample Cost Forecast by Year: RAG and without RAG](yearly-costs-est-openai-rag-norag.png)
 
