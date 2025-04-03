@@ -1,9 +1,4 @@
-
-<a id='home' name='home'></a>
-[Home](#home) |
-[Executive Sumary](#exec-summary) 
-
-# **Retrieval-Augmented Generation (RAG) Cost Analysis with OpenAI**
+# Retrieval-Augmented Generation (RAG) Cost Analysis with OpenAI
 
 <a href="https://www.ebigurus.com" target="_blank">
   <img src="https://static.wixstatic.com/media/9e30ae_d8455f1fc37e407f99e49718483c63b1~mv2.png" alt="Enterprise Business Innovation Gurus, Inc" width="300">
@@ -17,18 +12,15 @@
 
 ---
 
-# **Disclaimer**
-* This notebook is for educational purposes to help the reader understand Retrieval-Augmented Generation and how it can affect proprietary LLM (e.g., OpenAI) application costs when querying a local  knowledge base. It is not meant for use as is in a production environment.
-* This notebook was written for use with Google Colab to ensure it can run without the need for additional software or hardware requirements.
-* This notebook was designed to be used without the need for an OpenAI license. "tiktoken" is a python library published by OpenAI and is used in this notebook to accurately calculate OpenAI's GPT model API input tokens.
-* This notebook is governed under the MIT LICENSE which is included in this notebook.
+# Disclaimer
+* The provided notebook is for educational purposes to help the reader understand Retrieval-Augmented Generation and how it can affect proprietary LLM (e.g., OpenAI) application costs when querying a local  knowledge base. It is not meant for use as is in a production environment.
+* The notebook was written for use with Google Colab to ensure it can run without the need for additional software or hardware requirements.
+* The notebook was designed to be used without the need for an OpenAI license. "tiktoken" is a python library published by OpenAI and is used in this notebook to accurately calculate OpenAI's GPT model API input tokens.
+* The notebook is governed under the MIT LICENSE which is included in the notebook.
 * All proprietary LLM pricing, corresponding cost estimates, forecasts, and third party website links are as of the publish date (DATE PUBLISHED) of this notebook and are subject to change without notice.
-* Converting this notebook for use in a production environments requires changes that may include but are not limited to refactoring the code, adding additional error handling, storing embeddings in a vector data store, alternative embedding chunk strategies and DevOps and LLMOps considerations.
+* Converting the notebook for use in a production environments requires changes that may include but are not limited to refactoring the code, adding additional error handling, storing embeddings in a vector data store, alternative embedding chunk strategies and DevOps and LLMOps considerations.
 
-<a id='exec-summary' name='exec-summary'></a>
-# **Executive Summary**
-[Home](#home)
-
+# Executive Summary
 
 **Retrieval-Augmented Generation (RAG)** provides a smarter way to leverage Large Language Models (LLMs) for use with local knowledge sources while reducing expenses, improving accuracy, enabling scalability and making generative AI apps economically viable.
 
@@ -50,3 +42,14 @@ Unlike traditional LLMs that require frequent fine-tuning, RAG dynamically retri
 2. **Generation**: The retrieved data is appended to an LLM prompt, providing additional context for generating a response. This avoids the need for fine-tuning, making the system dynamic and cost-efficient.
 
 As shown in Figure 1, "Retrieval-Augmented Generation (RAG) Costs Analysis" using a RAG framework can result in significant cost savings for generative AI apps.
+
+![RAG Cost for Proprietary LLMs Input Tokens](rag_cost_analysis.jpg)
+
+# Using the Notebook
+The notebook is a Google Colab notebook written in Python. The notebook was designed to opened and run in Google Colab.
+
+The notebook shows how to accurately calculate usage input token costs for a propreitary LLM, specifically, OpenAI. It uses a fictitious company's financial report as an internal knolwedge document and 1 year of synthetic usage data to illustrate calculating and forecasting the cost of input tokens for user queries as illustrated in the following chart.
+
+![Sample Cost Forecast by Year: RAG and without RAG](yearly-costs-est-openai-rag-norag.png)
+
+[Back to top](#retrieval-augmented-generation-rag-cost-analysis-with-openai)
